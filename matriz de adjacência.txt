@@ -1,0 +1,13 @@
+matriz = []
+v = int(input('Informe o número de vértices do grafo: '))
+#Declaração da matriz
+for i in range(v): #Número de linhas
+    matriz.append([0]*v) #Número de colunas
+#Montagem da matriz
+for i in range(0, v):
+    for j in range(0, v):
+        matriz[i][j] = int(input(f'Informe a incidência de {i}:{j}: '))
+#Mostrando a matriz na tela
+for i in range(0, v):
+    print(matriz[i])
+#Código Python
